@@ -1,0 +1,17 @@
+body
+{
+	margin: 10px 0;
+	padding: 0px;
+	text-align: center;
+	font: 1em sans-serif;
+	background: #FFFFFF
+}
+
+div#conteneur
+{ 
+	width: 90% ; /* largeur de la division*/
+	margin: 0 auto;
+	text-align: left;	/*realigne le texte sur la gauche*/
+	border: 2px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
+	background: #B6B5A9;  /*applique une couleur dans l'encadrement */
+}
