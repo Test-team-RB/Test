@@ -1,17 +1,39 @@
 body
 {
-	margin: 10px 0;
+	margin: 0 0;
 	padding: 0px;
 	text-align: center;
 	font: 1em sans-serif;
-	background: #FFFFFF
+	background: #FFFFFF;
+	min-height: 100%;
 }
 
-div#conteneur
-{ 
-	width: 90% ; /* largeur de la division*/
-	margin: 0 auto;
+div#bandeAccueil
+{
+	display: inline-block;
+	width: 100%;
+	height: 75px;
+	background: #B6B5A9;
+	margin: 0;
+} 
+
+div#pingeet
+{
+
+	width: 50% ; /* largeur de la division*/
+	margin: 5px auto;
 	text-align: left;	/*realigne le texte sur la gauche*/
 	border: 2px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
-	background: #B6B5A9;  /*applique une couleur dans l'encadrement */
+	background: #FFFFFF;  /*applique une couleur dans l'encadrement */
+	text-indent: 5px;
+}
+
+div#infocompte
+{
+	width: 50% ; /* largeur de la division*/
+	margin: 5px auto;
+	text-align: left;	/*realigne le texte sur la gauche*/
+	border: 2px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
+	background: #FFFFFF;  /*applique une couleur dans l'encadrement */
+	text-indent: 5px;
 }
