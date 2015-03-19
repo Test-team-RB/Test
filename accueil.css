@@ -1,4 +1,4 @@
-body
+body /*miaou*/
 {
 	margin: 0 0;
 	padding: 0px;
@@ -17,19 +17,16 @@ div#bandeAccueil
 	margin: 0;
 	position: fixed;
 	padding: 0;
-
 } 
 
 div#conteneur
 {
-
 	width: 50% ; /* largeur de la division*/
 	margin: 5px auto;
 	text-align: left;	/*realigne le texte sur la gauche*/
 	border: 2px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
 	background: #FFFFFF;  /*applique une couleur dans l'encadrement */
 	text-indent: 5px;
-	
 }
 
 div#infoCompte
