@@ -13,15 +13,17 @@ div#bandeAccueil
 	width: 100%;
 	height: 65px;
 	background: #B6B5A9;
-	margin: 0;
+	margin: 0 0;
 	position: fixed;
 	padding: 0;
 	z-index: 3;
+	top: 0;
 } 
 
 div#conteneur
 {
 	margin: 0 0;
+	paddin: 0;
 	text-align: center;
 	border: 2px solid transparent; /*applique un encadrement de taille de type et de couleur choisi*/
 	/*background: #FFFFFF;  /*applique une couleur dans l'encadrement */
@@ -35,7 +37,7 @@ div#infoCompte
 	width: 20% ; /* largeur de la division*/
 	height: 150px;
 	margin: 65px 0 0 150px;
-	border: 2px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
+	border: 1px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
 	background: #FFFFFF;  /*applique une couleur dans l'encadrement */
 	text-indent: 5px;
 	display: block;
@@ -46,8 +48,8 @@ div#pageFisher
 {
 	width: 20% ; /* largeur de la division*/
 	height: 1000px;
-	margin: 220px 0 0 148px;
-	border: 2px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
+	margin: 220px 0 0 151px;
+	border: 1px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
 	background: #FFFFFF;  /*applique une couleur dans l'encadrement */
 	text-indent: 5px;
 	display:block;
@@ -66,7 +68,7 @@ div#pingeet
 	margin: auto auto auto auto;
 	min-height: 100%;
 	width: 30%;
-	border: 2px solid transparent;
+	border: 1px solid #5A2530;	
 	background: #FFF;
 	z-index: 2;
 }
