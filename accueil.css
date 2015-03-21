@@ -4,7 +4,7 @@ body /*miaou*/
 	padding: 0px;
 	text-align: center;
 	font: 1em sans-serif;
-	background: #FFFFFF;
+
 }
 
 div#bandeAccueil
@@ -16,6 +16,7 @@ div#bandeAccueil
 	margin: 0;
 	position: fixed;
 	padding: 0;
+	z-index: 3;
 } 
 
 div#conteneur
@@ -23,9 +24,10 @@ div#conteneur
 	margin: 0 0;
 	text-align: center;
 	border: 2px solid transparent; /*applique un encadrement de taille de type et de couleur choisi*/
-	background: #FFFFFF;  /*applique une couleur dans l'encadrement */
+	/*background: #FFFFFF;  /*applique une couleur dans l'encadrement */
 	text-indent: 5px;
-	
+	background:url(BackgroundTest.jpeg) no-repeat left top;
+	background-size: cover
 }
 
 div#infoCompte
@@ -38,8 +40,7 @@ div#infoCompte
 	text-indent: 5px;
 	display: block;
 	position: fixed;
-	top: 0;
-	left: 0;
+z-index: 3;
 }
 div#pageFisher
 {
@@ -51,6 +52,7 @@ div#pageFisher
 	text-indent: 5px;
 	display:block;
 	position: static;
+	z-index: 2;
 }
 
 div#pingeet
@@ -65,4 +67,6 @@ div#pingeet
 	min-height: 100%;
 	width: 30%;
 	border: 2px solid transparent;
+	background: #FFF;
+	z-index: 2;
 }
