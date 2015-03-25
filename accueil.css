@@ -2,7 +2,7 @@ body /*miaou*/
 {
     background:url(BackgroundTest.jpeg) left top;
 	background-size: cover;
-	margin: 0 0;
+    margin: 0 0;
 	padding: 0px;
 	text-align: center;
 	font: 1em sans-serif;
@@ -101,3 +101,5 @@ div#pingeet
     background: #FFF;
     z-index: 2;
 }
+
+
