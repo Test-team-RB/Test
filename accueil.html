@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 
 <head>
     <meta charset="utf8" />
     <link rel="stylesheet" href="accueil.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script type="app.js"></script>
     <title> Pingeet </title>
 
     <body>
@@ -12,27 +15,41 @@
                 <h1 id="header">
 			<a href="" title="Pingeet"><span> bienvenu sur Pingeet!</span> </a></h1>
             </div>
-
+            <hr>
             <div id="infoCompte">
                 <p>retrouver toute les infos de compte</p>
             </div>
-
+            <hr>
             <div id="pageFisher">
                 <p>retrouver facilement toute les pages que vous avez fisher </p>
             </div>
-
+            <hr>
             <div id="pingeet">
                 <p> ici on retrouve les pingeet
                     <br/>
                 </p>
             </div>
-
+            <hr>
             <div id="connexion">
-                <p>pseudo</p>
-                <p>mot de passe</p>
-                <p>s'inscrire</p>
-            </div>
+                <div ng-controller='LoginController'>
+                    <form ng-submit="connexion()">
+                        <label for="name">Login :</label>
+                        <input name="login" ng-model="identifiants.login" placeholder="Login" />
+                        <label for="password">Password :</label>
+                        <input name="password" type="password" ng-model="identifiants.password" />
 
+                        <button type="submit">Se connecter</button>
+                        <button type="button">s'inscrire</button>
+                    </form>
+
+                    <div>
+                        <p><span ng-if="connected">Connexion OK</span>
+                            <span ng-if="!connected">Connexion KO</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
             <div id="suggestion">
                 <p>On vous suggère ces pages, vos amis les suivent! </p>
 

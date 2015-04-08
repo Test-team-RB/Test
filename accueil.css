@@ -1,82 +1,91 @@
-body /*miaou*/
+body
+/*miaou*/
+
 {
-    background:url(BackgroundTest.jpeg) left top;
-	background-size: cover;
+    background: url(BackgroundTest.jpeg) left top;
+    background-size: cover;
     margin: 0 0;
-	padding: 0px;
-	text-align: center;
-	font: 1em sans-serif;
-    overflow: scroll;
+    padding: 0px;
+    text-align: center;
+    font: 1em sans-serif;
+    overflow: auto;
 }
 
-div#bandeAccueil
-{
-	display: block;
-	width: 100%;
-	height: 65px;
-	background: #B1B5C8;
-	margin: 0 0;
-	position: fixed;
-	padding: 0;
-	z-index: 3;
-	top: 0;
-} 
+div#bandeAccueil {
+    display: block;
+    width: 100%;
+    height: 65px;
+    background: #B1B5C8;
+    margin: 0 0;
+    position: fixed;
+    padding: 0;
+    z-index: 3;
+    top: 10
+}
 
-div#conteneur
-{
-	margin: 0 0;
-	padding: 0;
-	text-align: center;
+div#conteneur {
+    margin: 0 0;
+    padding: 0;
+    text-align: center;
     text-indent: 5px;
-    overflow:auto;
+    overflow: auto;
     z-index: 1;
 }
 
-div#infoCompte
-{
-	width: 300px ; /* largeur de la division*/
-	height: 150px; 
-	margin: 63px 0 0 150px;
-	border: 1px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
-	background: #FFFFFF;  /*applique une couleur dans l'encadrement */
-	text-indent: 5px;
-	display: block;
-	position: absolute;
-	z-index: 2;
-}
-div#pageFisher
-{
-	width: 300px ; /* largeur de la division*/
-	height: 700px;
-	margin: 220px 0 0 151px;
-	border: 1px solid #5A2530; /*applique un encadrement de taille de type et de couleur choisi*/
-	background: #FFFFFF;  /*applique une couleur dans l'encadrement */
-	text-indent: 5px;
-	display:block;
-	position: absolute;
-	z-index: 2;
+div#infoCompte {
+    width: 300px;
+    /* largeur de la division*/
+    
+    height: 150px;
+    margin: 63px 0 0 150px;
+    border: 1px solid #5A2530;
+    /*applique un encadrement de taille de type et de couleur choisi*/
+    
+    background: #FFFFFF;
+    /*applique une couleur dans l'encadrement */
+    
+    text-indent: 5px;
+    display: block;
+    position: absolute;
+    z-index: 2;
 }
 
-div#pingeet
-{
-	
-	top: 65px;
-	left: 170px;
-	right: 170px;
-	display:block;
-	position: absolute;
-	margin: 63px 0 0 350px;
-    height: 500px;
-	width: 600px;
-	border: 1px solid #5A2530;	
-	background: #FFF;
-	z-index: 2;
+div#pageFisher {
+    width: 300px;
+    /* largeur de la division*/
+    
+    height: 700px;
+    margin: 220px 0 0 151px;
+    border: 1px solid #5A2530;
+    /*applique un encadrement de taille de type et de couleur choisi*/
+    
+    background: #FFFFFF;
+    /*applique une couleur dans l'encadrement */
+    
+    text-indent: 5px;
+    display: block;
+    position: absolute;
+    z-index: 2;
 }
-#suggestion 
-{
+
+div#pingeet {
+    top: 65px;
+    left: 170px;
+    right: 170px;
+    display: block;
+    position: absolute;
+    margin: 63px 0 0 350px;
+    height: 500px;
+    width: 600px;
+    border: 1px solid #5A2530;
+    background: #FFF;
+    z-index: 2;
+}
+
+#suggestion {
     width: 300px;
     height: 350px;
-    margin: 63px 0 0 auto;
+    margin: 63px 0 0 300px;
     display: block;
     position: absolute;
     top: 200px;
@@ -85,21 +94,26 @@ div#pingeet
     border: 1px solid #5A2530;
     background: #FFF;
     z-index: 2;
+    overflow: auto;
 }
 
-#connexion
-{
-    width: 300px;
-    height: 120px;
-    margin: 63px 0 0 auto;
+#connexion {
+    max-width: 300px;
+    width: 100%;
+    max-height: 120px;
+    height: 100%;
+    margin: 63px 0 0 300px;
     display: block;
     position: absolute;
     top: 65px;
     right: 130px;
-    left: 900;
+    left: 900px;
     border: 1px solid #5A2530;
     background: #FFF;
     z-index: 2;
 }
 
-
+label {
+    float: left;
+    padding-right: 20px;
+}
