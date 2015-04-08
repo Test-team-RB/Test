@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test pingeet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div ng-controller="MainCtrl">
+        <!-- Afficher la section qui correspond au statut -->
+        <div id="wrapper" ng-switch="user.status">
+            <div ng-controller="logincheck" ng-switch-default>
+                <h2>page de log</h2>
+                <div>
+                    <form ng-submit="connexion()">
+                        <div>Login :
+                            <input ng-model="identifiants.login" />
+                        </div>
+                        <div>Password :
+                            <input type="password" ng-model="identifiants.password" />
+                        </div>
+                        <button type="submit">Se connecter</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div ng-switch-when=true>
+                <h2>page d'accueil</h2>
+                <p>marche</p>
+            </div>
+            <div ng-switch-when=false>
+                <h2>register</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
