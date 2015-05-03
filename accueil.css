@@ -1,7 +1,4 @@
-body
-/*miaou*/
-
-{
+body{
     background: url(BackgroundTest.jpeg) left top;
     background-size: cover;
     margin: 0 0;
